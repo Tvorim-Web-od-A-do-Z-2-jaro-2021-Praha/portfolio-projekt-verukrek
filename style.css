@@ -32,11 +32,11 @@
 
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
    .navigace-block{
-    grid-template-columns: 1fr;
+    display: block;
 
-} /* Nefunguje mi media querie ani grid-template-columns: repeat(auto-fil, 150)*/
+} 
 }
 .navigace-block__about{
     grid-column-start: 1;
