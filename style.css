@@ -20,20 +20,41 @@
 }
 .navigace-block {
 
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: minmax(20px, 50px);
+    row-gap: 10px;
+    column-gap: 25px;
+    grid-template-areas: "nav nav nav nav";
+    justify-content: right;
+    place-items: center;
+    list-style-type: none;
+
+}
+
+@media screen and (max-width: 500px) {
+   .navigace-block{
+    display: block;
+
+} 
 }
 .navigace-block__about{
-
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .navigace-block__about--color{
 
 }
 .navigace-block__career{
+    grid-column-start: 2;
 
 }
 .navigace-block__education{
+    grid-column-start: 3;
 
 }
 .navigace-block__contact{
+    grid-column: 4/5;
 
 }
 .site-block {
