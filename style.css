@@ -1,92 +1,90 @@
-.main-block{
+body {
+  background-color: #f5880c;
+  font-family: "Poiret One", cursive;
+  margin: 0;
+}
 
+h2 {
+  font-weight: bold;
 }
-.main-block__element{
 
-}
-.hlava-block {
-}
-.hlava-block--text{
-
-}
-.hlava-block__hlavni-element{
-
-}
-.hlava-block__hlavni-element--vyrazne{
-
-}
-.hlava-block__hlavni-element--nevyrazne{
-
-}
 .navigace-block {
-
-    display: grid;
-    grid-template-columns: repeat(4, 15%);
-    grid-template-rows: minmax(20px, 50px);
-    row-gap: 10px;
-    column-gap: 25px;
-    grid-template-areas: "nav nav nav nav";
-    justify-content: right;
-    place-items: center;
-    list-style-type: none;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
-@media screen and (max-width: 500px) {
-   .navigace-block{
-    display: block;
+.navigace-block li {
+  list-style: none;
+  padding: 1rem;
+  font-weight: bold;
+}
 
-} 
+.navigace-block a {
+  text-decoration: none;
 }
-.navigace-block__about{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-.navigace-block__about--color{
 
+.navigace-block a:visited {
+  color: rgba(3, 3, 3, 0.8);
 }
-.navigace-block__career{
-    grid-column-start: 2;
 
+.navigace-block a:hover {
+  color: #f5880c;
 }
-.navigace-block__education{
-    grid-column-start: 3;
 
+.hlava-block__hlavni-element {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: rgba(3, 3, 3, 0.8);
+  padding: 1rem;
+  margin: 1.5rem;
+  margin-top: 0;
+  -webkit-box-shadow: 5px 10px 30px 0 black;
+          box-shadow: 5px 10px 30px 0 black;
+  color: rgba(255, 255, 255, 0.911);
 }
-.navigace-block__contact{
-    grid-column: 4/5;
 
+.hlava-block__hlavni-element img {
+  width: 80%;
+  border-radius: 0px 40px 40px 40px;
+  padding: 1rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
 }
+
 .site-block {
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(3, 3, 3, 0.8);
+  color: rgba(255, 255, 255, 0.911);
 }
-.site-block__logo{
 
+.site-block img {
+  width: 70%;
 }
-.site-block__logo--linkedin{
 
+.main-block__element {
+  margin: 1.5rem;
 }
-.site-block__logo--github{
 
+@media only screen and (max-width: 450px) {
+  .navigace-block {
+    display: block;
+  }
 }
-.site-block__logo--facebook{
-
-}
-.about-block{
-
-}
-.about-block--color{
-
-}
-.career-block{
-
-}
-.career-block--color{
-
-}
-.education-block{
-
-}
-.education-block--color{
-
-}
+/*# sourceMappingURL=style.css.map */

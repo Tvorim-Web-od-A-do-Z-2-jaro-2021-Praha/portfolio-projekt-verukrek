@@ -5,23 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osobní portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="hlava-block hlava-block--text">
         <ul class="navigace-block">
-            <li class="navigace-block__about navigace-block__about--color">O mně</li>
-            <li class="navigace-block__career">Profesní zkušenosti</li>
-            <li class="navigace-block__education">Vzdělání</li>
-            <li class="navigace-block__contact">Kontakt</li>
+            <li class="navigace-block__about navigace-block__about--color"><a href="#about-block">O mně</a></li>
+            <li class="navigace-block__career"><a href="#career-block">Profesní zkušenosti</a></li>
+            <li class="navigace-block__education"><a href="#education-block">Vzdělání</a></li>
+            <li class="navigace-block__contact"><a href="#site-block">Kontakt</a></li>
         </ul>
         <div class="hlava-block__hlavni-element">
-            <h1 class="hlava-block__hlavni-element--vyrazne"></h1>
-            <p class="hlava-block__hlavni-element--nevyrazne">Úvodní text</p>
+            <img src="VeronikaK.jpeg" alt="Profilová foto">
+            <h1 class="hlava-block__hlavni-element--vyrazne">Veronika Krekulová</h1>
+            <p class="hlava-block__hlavni-element--nevyrazne">
+                Jsem absolventkou bakalářského studijního programu Personální management v průmyslových podnicích a inženýrského studijního programu Projektové řízení inovací na ČVUT. Již během studijí jsem začala pracovat v oblasti personalistiky, kde působím dodnes. Nyní pracuji jako HR Generalist ve společnosti působící v automotive a průmyslovém segmentu. Na starosti mám kompletní nastavení a realizaci všechn HR procesů společnosti.</p>
         </div>
+
+    </header>
+    <main class="main-block">
+        <!--
+        <div class="about-block main-block__element about-block--color">
+            <h2>O mně</h2>
+            <p></p>
+        </div>-->
+        <div class="career-block main-block__element career-block--color">
+            <h2>Profesní zkušenosti</h2>
+
+        </div>
+        <div class="education-block main-block__element education-block--color">
+            <h2>Vzdělání</h2>
+
+        </div>
+    </main>
+    <footer>
         <div class="site-block">
+        <h3>Kontakty</h3>
             <a href="https://www.linkedin.com/in/veronika-krekulová-991519129/" title="LinkedIn">
-                <img class="site-block__logo site-block__logo--linkedin" src="linkedin.svg" alt="LinkedIn">
+                <img class="site-block__logo site-block__logo--linkedin" src="linkedin-logo.svg" alt="LinkedIn">
             </a>
             <a href="https://github.com/verukrek" title="GitHub">
                 <img class="site-block__logo site-block__logo--github" src="github.svg" alt="GitHub">
@@ -30,17 +53,7 @@
                 <img class="site-block__logo site-block__logo--facebook" src="facebook.svg" alt="Facebook">
             </a>
         </div>
-    </header>
-    <main class="main-block">
-        <div class="about-block main-block__element about-block--color">
-            Krátký odstavec o mně
-        </div>
-        <div class="career-block main-block__element career-block--color">
+    </footer>
 
-        </div>
-        <div class="education-block main-block__element education-block--color">
-
-        </div>
-    </main>
 </body>
 </html>
