@@ -34,8 +34,8 @@ h2{
 .navigace-block{
     display: flex;
     justify-content: flex-end;
-    padding: 0;
-    margin: 0;
+    padding: $boxPad;
+    margin: $boxMar;
     
 
     li{
@@ -44,7 +44,8 @@ h2{
     font-weight: $fontStyl;
     }
 
-    a{
+    a{  
+        color: $secondColor;
         text-decoration: $decor;
         &:visited{
             color: $secondColor;
@@ -57,18 +58,37 @@ h2{
 }
 .hlava-block__hlavni-element{
     @include grid();
+    column-gap: 0;
     background-color: $secondColor;
     padding: $boxPad;
     margin: $boxMar;
     margin-top: 0;
     box-shadow: $boxShadow;
     color: $boxText;
+    max-width: 70%;
+    margin: 0 auto;
    
-    img {
-        width: 80%;
+    .profil {
+        width: 50%;
         border-radius: $radiumImg;
         padding: $boxPad;
-        grid-row: 1/3;
+        grid-row: 1/4;
+    }
+    &--vyrazne {
+      justify-self: left;
+      align-self: flex-end;
+    }
+    &--nevyrazne {
+        font-family: $fontFam;
+        font-size: large;
+        font-weight: lighter;
+        font-style: italic;
+        justify-self: left;
+        
+    }
+    .signature {
+        justify-self: end;
+        padding: $boxPad
     }
 }
 
@@ -77,20 +97,54 @@ h2{
     background-color: $secondColor;
     color: $boxText;
 
-    img{
+    img, svg{
         width: 70%;
     }
+}
+
+
+#fb:hover{
+    fill: $mainColor; 
+    transition: all ease 1.2s;
+    transform: rotate(360deg);
+
+}
+#linked:hover{
+    fill: $mainColor;
+    transition: all ease 0.5s;
+    transform: scale(1.5);
 
 }
 
-.main-block{
-    &__element {
-        margin: $boxMar;
+.main-carousel{
+ margin: 0 auto;
+ width: 50vw;
+
+ /*.flickity-button{
+     Jak posunout button pryč z textu?
+ }*/
+}
+.carousel-cell{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: $boxMar;
+    text-align: center;
+
+    p{
+        font-weight: 600;
     }
+
 }
 
 @media only screen and (max-width: 450px){
     .navigace-block{
+        display: block;
+    }
+    .hlava-block__hlavni-element{
         display: block;
     }
 }
